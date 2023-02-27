@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albion</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .text-red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h3 class="mb-5 fw-bold">阿爾比恩市場價格</h3>
+      <div class="row">
+        <!-- 棉花 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_FIBER.png" width="50" />棉花
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-fiber"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 布 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_CLOTH.png" width="50" />布
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-cloth"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 皮 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T1_HIDE.png" width="50" />皮
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-hide"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 皮革 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_LEATHER.png" width="50" />皮革
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-leather"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 礦 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_ORE.png" width="50" />礦
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-ore"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 金屬 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_METALBAR.png" width="50" />金屬
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-metalbar"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 石 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T1_ROCK.png" width="50" />石
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-rock"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 石塊 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_STONEBLOCK.png" width="50" />石塊
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-stoneblock"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 木頭 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T1_WOOD.png" width="50" />木頭
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-wood"></tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 木板 -->
+        <div class="col-sm-6">
+          <div class="mb-5">
+            <h4 class="fw-bold">
+              <img src="./images/T2_PLANKS.png" width="50" />木板
+            </h4>
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">白城</th>
+                  <th scope="col">黃城</th>
+                  <th scope="col">藍城</th>
+                  <th scope="col">綠城</th>
+                  <th scope="col">紫城</th>
+                  <th scope="col">紅城</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-planks"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      /*
+       *Fort Sterling=白城
+       *Bridgewatch=黃城
+       *Martlock=藍城
+       *Lymhurst=綠城
+       *Thetford=紫城
+       *Caerleon=紅城
+       */
+      const API_URL = "https://www.albion-online-data.com/api/v1/stats/prices";
+      const ERROR_HANDLER = () => alert("發生錯誤!");
+      const CITY_LIST = [
+        "Fort Sterling",
+        "Bridgewatch",
+        "Martlock",
+        "Lymhurst",
+        "Thetford",
+        "Caerleon",
+      ];
+
+      const CELL_TEMPLATE = (levelRange, dataList, type) => {
+        var tableTemplate = "";
+        $.each(levelRange, function (_, level) {
+          const levelDataList = dataList.filter(
+            (el) =>
+              CITY_LIST.includes(el.city) && el.item_id == `T${level}_${type}`
+          );
+          const priceList = levelDataList.map((el) => el.sell_price_min);
+          const highestPrice = Math.max(...priceList);
+
+          var template = `<th>T${level}</th>`;
+          $.each(CITY_LIST, function (index, data) {
+            var price = levelDataList.find(
+              (el) => el.city == CITY_LIST[index]
+            )?.sell_price_min;
+            const cellStyle = price == highestPrice ? "text-red" : "";
+            template += `<td class='${cellStyle}'>${price}</td>`;
+          });
+          tableTemplate += `<tr>${template}<tr/>`;
+        });
+        return tableTemplate;
+      };
+
+      const BASIC_LEVEL_RANGE = [...Array(9).keys()].filter(
+        (el) => ![0].includes(el)
+      );
+      const ADVANCE_LEVEL_RANGE = [...Array(9).keys()].filter(
+        (el) => ![0, 1].includes(el)
+      );
+
+      const TABLE_DATA = [
+        {
+          tbody: "tbody-fiber",
+          type: "FIBER",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-cloth",
+          type: "CLOTH",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-hide",
+          type: "HIDE",
+          levelRange: BASIC_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-leather",
+          type: "LEATHER",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-ore",
+          type: "ORE",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-metalbar",
+          type: "METALBAR",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-rock",
+          type: "ROCK",
+          levelRange: BASIC_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-stoneblock",
+          type: "STONEBLOCK",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-wood",
+          type: "WOOD",
+          levelRange: BASIC_LEVEL_RANGE,
+        },
+        {
+          tbody: "tbody-planks",
+          type: "PLANKS",
+          levelRange: ADVANCE_LEVEL_RANGE,
+        },
+      ];
+
+      $(function () {
+        $.each(TABLE_DATA, function (index, data) {
+          const path = combindPath(data.levelRange, data.type);
+          const successHandler = (dataList) => {
+            const cellTemplate = CELL_TEMPLATE(
+              data.levelRange,
+              dataList,
+              data.type
+            );
+            $(`#${data.tbody}`).append(cellTemplate);
+          };
+          requestAJAX(path, successHandler);
+        });
+      });
+
+      function requestAJAX(path, successHandler) {
+        $.ajax({
+          url: `${API_URL}/${path}`,
+          method: "GET",
+          success: function (data) {
+            console.log(data);
+            successHandler(data);
+          },
+          error: function (err) {
+            console.log(err);
+            ERROR_HANDLER();
+          },
+        });
+      }
+
+      function combindPath(levelRange, type) {
+        var path = "";
+        $.each(levelRange, function (index, level) {
+          path += index == 0 ? `T${level}_${type}` : `,T${level}_${type}`;
+        });
+        return path;
+      }
+    </script>
+  </body>
+</html>
